@@ -17,6 +17,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",
+    "json-server": "^0.16.3",
     "postcss": "^8.3.5",
     "sass": "^1.35.2",
     "webpack": "^5.44.0",
