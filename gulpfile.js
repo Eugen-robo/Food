@@ -15,11 +15,11 @@ gulp.task("copy-html", () => {
 });
 
 gulp.task("build-js", () => {
-    return gulp.src("./src/js/main.js")
+    return gulp.src("./src/js/script.js")
                 .pipe(webpack({
                     mode: 'development',
                     output: {
-                        filename: 'main.js'
+                        filename: 'script.js'
                     },
                     watch: false,
                     devtool: "source-map",
@@ -86,11 +86,11 @@ gulp.task("prod", () => {
     gulp.src("./src/icons/**/*.*")
         .pipe(gulp.dest(dist + "/icons"));
 
-    gulp.src("./src/js/main.js")
+    gulp.src("./src/js/script.js")
         .pipe(webpack({
             mode: 'production',
             output: {
-                filename: 'main.js'
+                filename: 'script.js'
             },
             module: {
                 rules: [
